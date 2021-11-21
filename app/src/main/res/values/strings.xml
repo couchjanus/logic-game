@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Logic game</string>
+    <string name="yes">Yep</string>
+    <string name="no">Nop</string>
+    <string name="gues_color">Guess color</string>
+</resources>

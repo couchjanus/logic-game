@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andtoid="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="30 second"
+                android:onClick="onRadioClicked"
+
+                android:id="@+id/minTime"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="60 second"
+                android:onClick="onRadioClicked"
+                android:id="@+id/maxTime"/>
+        </RadioGroup>
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewLeft"
+            android:gravity="start"
+             />
+
+        <TextView
+            android:id="@+id/textViewRight"
+            android:gravity="end"
+             />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/yesButton"
+
+            android:gravity="start"
+            android:onClick="guessYes"
+            android:text="@string/yes" />
+
+        <Button
+            android:id="@+id/noButton"
+
+            android:gravity="end"
+            android:onClick="guessNo"
+            android:text="@string/no" />
+    </TableRow>
+
+</TableLayout>
